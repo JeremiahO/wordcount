@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>There are {{count}} words in your text</h2>
+<!-->This is how you place links to anothe page reference the name in the url in this case being 'home'</-->
+<a href="{% url 'home' %}">Start Again</a>
+<h1>Your text: </h1>
+
+{{fulltext}}
+</br>
+</br>
+<h3>Most occuring word:</h3>
+
+</br>
+{%for word, counttotal in worddictionary%}
+
+{{word}} - {{counttotal}}
+</br>
+
+{% endfor %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Word Counter</h2>
+
+<a href="{% url 'about' %}">About</a>
+</br>
+</br>
+<form action="{% url 'count' %}">
+  <textarea rows="10" cols="50" name="fulltext"></textarea>
+  <br>
+  <input type="submit" value="count"/>
+</form>
+
+
+</body>
+</html>
